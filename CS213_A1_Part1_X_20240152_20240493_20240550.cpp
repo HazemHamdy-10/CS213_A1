@@ -1,11 +1,9 @@
 /*
- Project: OOP Assignment 1 - Part 1
- Section: X
-
- Team Members:
- - Hazem Hamdy Hamed, ID: 20240152 → solved: (Filter 1: Grayscale Conversion) & (Filter 4: Merge Images)
- - Mohamed Khaled Anwar, ID: 20240493 → solved: (Filter 2: Black and White) & (Filter 5: Flip Image)
- - Mahmoud Khaled Anwar, ID: 20240550 → solved: (Filter 3: Invert Image) & (Filter 6: Rotate Image)
+ Name : Hazem Hamdy Hamed
+ ID : 20240152
+ OOP Assignment 1 - Part 2
+ Section: S30
+ Filters : (grayscale, merge, edge detection, adjust brightness, diagram, menu)
 */
 
 #include <bits/stdc++.h>
@@ -286,3 +284,4 @@ int main() {
 
     return 0;
 }
+
