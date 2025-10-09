@@ -188,9 +188,9 @@ void blurImage() {
         return;
     }
 
-    int radius;
+    int blurRange;
     cout << "Enter blur strength : ";
-    cin >> radius;
+    cin >> blurRange;
 
     Image temp(img.width, img.height);
 
@@ -198,8 +198,8 @@ void blurImage() {
         for (int x = 0; x < img.width; ++x)
             for (int c = 0; c < img.channels; ++c) {
                 int sum = 0, count = 0;
-                for (int dy = -radius; dy <= radius; ++dy)
-                    for (int dx = -radius; dx <= radius; ++dx) {
+                for (int dy = -blurRange; dy <= blurRange; ++dy)
+                    for (int dx = -blurRange; dx <= blurRange; ++dx) {
                         int nx = x + dx, ny = y + dy;
                         if (nx >= 0 && nx < img.width && ny >= 0 && ny < img.height) {
                             sum += img(nx, ny, c);
@@ -277,3 +277,4 @@ int main() {
 
     return 0;
 }
+
